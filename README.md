@@ -1,12 +1,14 @@
 # AutoReg_Cusis
-At CUHK, there is busy network during register coureses at the begining of the semister. Human reaction time is around 0.25s, while my programm clicking time is around 0.013. So, Auto-register programm can ensure students 
+Automation with python(Selenium Package)
+
+At CUHK, students may not registered their courses since they click the enroll bottom slower than others. Auto-register programm can ensure students 
 can enroll their interested courses even if the quota of courses is very limited.
 
 
 the program is used for autmoating broswing CUSIS, and autoclick the enroll bottom for registering courses.
 This program ONLY work on chrome driver version
 # Change config.json with your infomation
-"login_email": "1155xxxxxx@link.cuhk.edu.hk"
+"login_email": "xxxxxxxxxxx@link.cuhk.edu.hk"
 
 "login_password": "12345678"
 
