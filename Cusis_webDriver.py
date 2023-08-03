@@ -2,6 +2,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 
 # os
 import time
@@ -32,7 +34,11 @@ def get_config():
 
 # get into cusis
 def login_CUSIS(login_email, login_password, selenium_driver_PATH):
-    dricusis = webdriver.Chrome(selenium_driver_PATH)
+    dricusis = webdriver.Chrome(
+        service=ChromeService(
+            ChromeDriverManager(driver_version="114.0.5735.90").install()
+        )
+    )
     dricusis.get("https://cusis.cuhk.edu.hk/")
     dricusis.set_window_size(968, 1056)
     dricusis.set_window_position(0, 0)
