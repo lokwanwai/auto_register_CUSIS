@@ -12,20 +12,16 @@ This program ONLY work on chrome driver version
 
 "login_password": "12345678"
 
-"register_time": "20:20:00.000000"
+"register_time": "20:20:00"
 
-"selenium_driver_PATH": the path of the selenium Chrome driver
 
 # tutorial
-1. install the selenium chrome driver in the computer [link](https://chromedriver.chromium.org/downloads)
 
-2. format the config file with your input
+1. run the main.py
 
-3. run the programme
+2. browse the shopping cart and select the courses you interested in
 
-4. browse the shopping cart and select the courses you interested in
-
-5. input your register mode
+3. input your register mode
 
 # register mode
 ### Validate
