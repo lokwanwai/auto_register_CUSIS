@@ -7,14 +7,17 @@ can enroll their interested courses even if the quota of courses is very limited
 
 the program is used for autmoating broswing CUSIS, and autoclick the enroll bottom for registering courses.
 This program ONLY work on chrome driver version
-# Change config.json with your infomation
+
+# Set-up
+## Change config.json with your infomation
 "login_email": "xxxxxxxxxxx@link.cuhk.edu.hk"
 
 "login_password": "12345678"
 
 "register_time": "20:20:00"
 
-
+## install specific library
+In terminal, run "pip install -r requirement.txt"
 # tutorial
 
 1. run the main.py
