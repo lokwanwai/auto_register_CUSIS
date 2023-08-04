@@ -3,7 +3,7 @@ import time
 
 
 class Timer:
-    def __init__(self, targetTime: str, timeBuffer: float = 0.0003):
+    def __init__(self, targetTime: str, timeBuffer: float = 0.01):
         self.targetTime = dt.datetime.strptime(
             dt.date.today().strftime("%Y-%m-%d") + targetTime, "%Y-%m-%d%H:%M:%S"
         )
@@ -12,10 +12,9 @@ class Timer:
         self.STATUS = False
 
         print("Target time:", self.targetTime)
-        self.currentTimeReport()
 
     def currentTimeReport(self):
-        print("Current time:", self.currentTime)
+        print("Current time:", self.currentTime, end="\r")
 
     def run(self):
         while True:
@@ -34,6 +33,6 @@ class Timer:
 
 
 if __name__ == "__main__":
-    target_time = "21:05:00"
+    target_time = "01:03:00"
     timer = Timer(targetTime=target_time)
     timer.run()
